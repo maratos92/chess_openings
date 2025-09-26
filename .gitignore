@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.dll
+.DS_Store
+
+# Frontend build artifacts
+chesslab/frontend/dist/
+node_modules/
+
+# Python virtual environments
+.env
+.venv
+venv/

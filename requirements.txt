@@ -1,1 +1,13 @@
-python
+Flask>=2.3
+Flask-Cors>=3.0
+Flask-SocketIO>=5.3
+python-socketio>=5.8
+python-engineio>=4.6
+SQLAlchemy>=2.0
+alembic>=1.10
+python-chess>=1.999
+redis>=4.5
+rq>=1.13
+eventlet>=0.33
+pytest>=7.0
+requests>=2.31

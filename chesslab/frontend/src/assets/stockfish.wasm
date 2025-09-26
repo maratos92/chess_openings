@@ -1,0 +1,9 @@
+This is a placeholder file indicating where the Stockfish WASM binary should be placed.
+
+To obtain the binary without relying on a CDN:
+1. Download an official Stockfish WASM build (e.g. from https://stockfishchess.org/download/).
+2. Copy the downloaded `stockfish.wasm` into this directory, replacing this placeholder.
+3. Ensure the companion JavaScript glue file points to the local WASM path if required.
+
+The development build references this path during bundling. If the file is missing at runtime,
+client-side analysis will fall back to the server engine when available.
