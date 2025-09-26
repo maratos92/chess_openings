@@ -43,6 +43,7 @@ def create_app(test_config: dict | None = None) -> Flask:
     return app
 
 
+
 def main() -> None:
     """Run the Socket.IO development server."""
     application = create_app()
