@@ -43,4 +43,20 @@ def create_app(test_config: dict | None = None) -> Flask:
     return app
 
 
-__all__ = ["create_app", "socketio", "Base"]
+
+def main() -> None:
+    """Run the Socket.IO development server."""
+    application = create_app()
+    socketio.run(
+        application,
+        host=os.getenv("FLASK_RUN_HOST", "127.0.0.1"),
+        port=int(os.getenv("FLASK_RUN_PORT", "5000")),
+        use_reloader=application.config.get("ENV") == "development",
+    )
+
+
+__all__ = ["create_app", "socketio", "Base", "main"]
+
+
+if __name__ == "__main__":  # pragma: no cover - manual execution helper
+    main()

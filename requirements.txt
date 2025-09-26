@@ -8,6 +8,6 @@ alembic>=1.10
 python-chess>=1.999
 redis>=4.5
 rq>=1.13
+eventlet>=0.33
 pytest>=7.0
 requests>=2.31
-chessboard>=0.2
